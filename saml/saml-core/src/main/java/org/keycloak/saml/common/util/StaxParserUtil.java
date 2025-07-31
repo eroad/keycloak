@@ -250,6 +250,7 @@ public class StaxParserUtil {
             xmlInputFactory.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);
             xmlInputFactory.setProperty(XMLInputFactory.IS_NAMESPACE_AWARE, Boolean.TRUE);
             xmlInputFactory.setProperty(XMLInputFactory.IS_COALESCING, Boolean.TRUE);
+            xmlInputFactory.setProperty(XMLInputFactory.SUPPORT_DTD, Boolean.FALSE);
 
             xmlEventReader = xmlInputFactory.createXMLEventReader(is);
         } catch (Exception ex) {
